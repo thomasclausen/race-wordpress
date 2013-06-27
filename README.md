@@ -1,9 +1,3 @@
-race
-====
-
-The Race Theme - WordPress theme
-
-
 # The Race Theme
 
 WordPress theme for a local bicycle race i Nordjylland, Denmark.
