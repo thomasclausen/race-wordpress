@@ -1,0 +1,30 @@
+/*
+Theme Name: The Bike Theme
+Description: Used to style the TinyMCE editor.
+*/
+
+* { font: 14px Arial, Helvetica, Verdana, sans-serif; font-style: inherit; font-weight: inherit; line-height: 20px; color: inherit; }
+
+body { font: 14px Arial, Helvetica, Verdana, sans-serif;  line-height: 20px; color: #333; }
+h1 { font: 34px Arial, Helvetica, Verdana, sans-serif; line-height: 34px; margin-bottom: 16px; }
+h2 { font: 26px Arial, Helvetica, Verdana, sans-serif; line-height: 30px; margin-bottom: 16px; }
+h3 { font-size: 14px; line-height: 18px; margin-bottom: 16px; }
+h4,
+h5,
+h6 { font-size: 14px; line-height: 20px; }
+p { margin-top: 0; margin-bottom: 20px; }
+a { color: #464646; }
+a:hover,
+a:focus { text-decoration: none; }
+em,
+i { font-style: italic; }
+strong,
+b { font-weight: bold; }
+
+.mceContentBody { max-width: 960px; }
+
+.mceContentBody .box { width: 300px; margin-right: 10px; margin-left: 10px; float: left; }
+.mceContentBody .box .image { }
+.mceContentBody .box .image img.alignnone { margin-bottom: 0; }
+.mceContentBody .box h2 { color: #fff; text-transform: uppercase; text-align: center; padding: 11px 20px; background: #cc242c; margin-top: 0; margin-bottom: 0; }
+.mceContentBody .box .content { min-height: 150px; padding: 20px 20px 0 20px; background: #fff; border: 1px solid #d8d8d8; border-top: none; }
