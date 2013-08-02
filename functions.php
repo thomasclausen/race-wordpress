@@ -318,7 +318,7 @@ function race_column_save_data( $post_id ) {
 	$new = $_POST['race_columns'];
 	if ( $new && $new != $old ) {
 		update_post_meta( $post_id, '_race_columns', $new );
-	} elseif ( '' == $new && $old ) {
+	} elseif ( '' === $new && $old ) {
 		delete_post_meta( $post_id, '_race_columns', $old );
 	}
 }
