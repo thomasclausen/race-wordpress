@@ -4,7 +4,7 @@
  *
  * @package RACE
  * @since RACE 1.0
- * @last_updated RACE 1.0
+ * @last_updated RACE 1.1
  */
 
 
@@ -149,6 +149,7 @@ add_action( 'wp_head', 'race_html5extras', 1 );
  * Insert HTML5 shiv
  *
  * @since RACE 1.0
+ * @last_updated RACE 1.1
  */
 function race_html5shiv() {
 	global $is_IE;
