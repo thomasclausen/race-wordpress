@@ -151,7 +151,10 @@ add_action( 'wp_head', 'race_html5extras', 1 );
  * @since RACE 1.0
  */
 function race_html5shiv() {
-	echo '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->' . "\n";
+	global $is_IE;
+	if ( $is_IE ) :
+		echo '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->' . "\n";
+	endif;
 }
 add_action( 'wp_head', 'race_html5shiv' );
 
