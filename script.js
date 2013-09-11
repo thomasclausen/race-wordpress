@@ -14,7 +14,6 @@
 			});
 
 		$('a', navigation).on('click', function (e) {
-			$(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
 			var section = $(e.target).attr('href');
 			$('html, body').animate({
 				scrollTop: $(section).offset().top - navigation_height
@@ -31,7 +30,7 @@
 
 		$(window).scroll(function() {
 			scroll_items.map(function(){
-				if ($(this).offset().top < $(window).scrollTop() + navigation_height) {
+				if ($(this).offset().top < $(window).scrollTop() + (navigation_height + 1)) {
 					navigation_items.filter('[href=#' + $(this).attr('id') + ']').parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
 				}
 			});
